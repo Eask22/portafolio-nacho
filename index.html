@@ -1,136 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ignacio Alvarez</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&family=Montserrat:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ignacio Alvarez</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&family=Montserrat:wght@600&display=swap"
+    rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
 
-      // Store hash
-      var hash = this.hash;
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
+          // Store hash
+          var hash = this.hash;
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
       });
-    } // End if
-  });
-});
-</script>
+    });
+  </script>
   
-  </head>
-  <body>
-    <header>
-      <div  class="menu">
-        <nav>
-          <ul>
-            <li><a href="#sobremi">Sobre Mí</a></li>
-            <li><a href="#objetivos">Objetivos</a></li>
-            <li><a href="#conocimientos">Conocimientos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="nombre">
-      
-        <h1>
-          Ignacio <br />
-          Gabriel Alvarez <br />
+</head>
 
-          <span>Web Developer</span>
-        </h1>
-        <img src="./CV.jpg" alt="FOTO PERSONAL" />
-      </div>
-    </header>
-
-    <section id="sobremi">
-      <div class="acercademi">
-        <h2 data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1000">Acerca de Mí</h2>
-
-        <p>
-          Hola, me presento, soy Ignacio Gabriel Alvarez, estudiante de nivel
-          secundario, amante de la tecnologia y la programacion. <br />
-          En lo que va de mi vida siempre fui una persona con ganas de aprender
-          mas y mas cada dia, <br />
-          para poder autosuperarme y ser una mejor version de mi mismo, <br />
-          al momento estoy aprendiendo programacion relacionada al desarrollo
-          web, <br />
-          para asi poder crear paginas que complazcan las necesidades de mis
-          clientes.
-        </p>
-      </div>
-    </section>
-    <section>
-      <div id="objetivos">
-        <h3 data-aos="zoom-in-right" data-aos-duration="1000">O<span>bjetivo</span>s</span></h3>
-        <ul data-aos="zoom-in" data-aos-duration="1000">
-          <li>Saber a fondo HTML y CSS para conocer todos sus conceptos</li>
-          <li>Relacionarme con Javascript y React</li>
-          <li>
-            Crear paginas webs funcionales y que tengan un uso practico
-          </li>
-          <li>Buscar trabajo como Frontend Developer</li>
-          <li>Inicializarme en Backend</li>
+<body class="container-fluid">
+  <header>
+    <div class="menu">
+      <nav>
+        <ul>
+          <li><a href="#sobremi">Sobre Mí</a></li>
+          <li><a href="#objetivos">Objetivos</a></li>
+          <li><a href="#conocimientos">Conocimientos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
-      </div>
-    </section>
-    <section>
-      <div id="conocimientos">
-        <h4>Conocimientos</h4>
-        <img
-          src="./CSS3_and_HTML5_logos_and_wordmarks.svg.png"
-          alt="HTML and CSS logo"
-        />
-      </div>
-    </section>
-    <footer>
-      <div data-aos="fade-right"
-      data-aos-duration="1000" id="contacto">
-        <p >
-          Podes contactarme por
-          <a class="wats"
-            target="_blank"
-            href="https://api.whatsapp.com/send?phone=+54 11 6897 9533&text=Hola, estaba interesado en saber si me podrias hacer una pagina web, gracias!"
-            >Whatsapp</a
-          >
-          O por
-          <a class="mail"  target="_blank" href="mailto:ignaciogabrielalvarez2018@gmail.com?"
-            >Mail</a
-          >
-        </p>
-        <p class="nombref">Ignacio<span> Alvarez</span></p>
-      </div>
+      </nav>
+    </div>
+    <div class="nombre">
 
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <h1>
+        Ignacio <br />
+        Gabriel Alvarez <br />
 
-      <script>
-        AOS.init();
-      </script>
-    </footer>
-  </body>
+        <span>Web Developer</span>
+      </h1>
+      <img  class="img1"src="/CV.jpg" alt="FOTO PERSONAL" />
+    </div>
+  </header>
+
+  <section id="sobremi">
+    <div class="acercademi">
+      <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">Acerca de Mí</h2>
+
+      <p>
+        Hola, me presento, soy Ignacio Gabriel Alvarez, estudiante de nivel
+        secundario, amante de la tecnologia y la programacion. <br />
+        En lo que va de mi vida siempre fui una persona con ganas de aprender
+        mas y mas cada dia, <br />
+        para poder autosuperarme y ser una mejor version de mi mismo, <br />
+        al momento estoy aprendiendo programacion relacionada al desarrollo
+        web, <br />
+        para asi poder crear paginas que complazcan las necesidades de mis
+        clientes.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div id="objetivos">
+      <h3 data-aos="zoom-in-right" data-aos-duration="1000">O<span>bjetivo</span>s</span></h3>
+      <ul data-aos="zoom-in" data-aos-duration="1000">
+        <li>Saber a fondo HTML y CSS para conocer todos sus conceptos</li>
+        <li>Relacionarme con Javascript y React</li>
+        <li>
+          Crear paginas webs funcionales y que tengan un uso practico
+        </li>
+        <li>Buscar trabajo como Frontend Developer</li>
+        <li>Inicializarme en Backend</li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <div id="conocimientos">
+      <h4>Conocimientos</h4>
+      <img src="/CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="HTML and CSS logo" />
+    </div>
+  </section>
+  <footer>
+    <div data-aos="fade-right" data-aos-duration="1000" id="contacto">
+      <p>
+        Podes contactarme por
+        <a class="wats" target="_blank"
+          href="https://api.whatsapp.com/send?phone=+54 11 6897 9533&text=Hola, estaba interesado en saber si me podrias hacer una pagina web, gracias!">Whatsapp</a>
+        O por
+        <a class="mail" target="_blank" href="mailto:ignaciogabrielalvarez2018@gmail.com?">Mail</a>
+      </p>
+      <p class="nombref">Ignacio<span> Alvarez</span></p>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
+  </footer>
+</body>
+
 </html>
