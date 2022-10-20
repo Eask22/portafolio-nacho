@@ -203,7 +203,7 @@ header h1:hover {
 #objetivos h3 {
   font-size: 100px;
   margin: 0px 60px 0 100px;
-  background-image: url(/coding-g5a5002104_1920.jpg);
+  background-image: url(./coding-g5a5002104_1920.jpg);
   color: transparent;
   background-clip: text;
   background-size: cover;
@@ -258,7 +258,7 @@ header h1:hover {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-image: url(/coding-g5a5002104_1920.jpg);
+  background-image: url(./coding-g5a5002104_1920.jpg);
   background-size: cover;
   background-attachment: fixed;
   border-top: solid white;
