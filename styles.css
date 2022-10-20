@@ -166,7 +166,7 @@ header h1:hover {
   background-color: rgb(0, 0, 0);
   color: white;
   text-shadow: rgb(90 231 184) 0px 0px 3px;
-  padding: 100px;
+  padding: 100px 0px;
   margin: 0;
 }
 
@@ -177,6 +177,7 @@ header h1:hover {
   justify-content: center;
   border-top: solid rgb(255, 255, 255);
   background-color: black;
+  flex-wrap: nowrap;
 }
 
 #objetivos h3 {
@@ -200,7 +201,7 @@ header h1:hover {
 
 #objetivos li {
   font-size: 25px;
-  margin: 70px 0px 50px 150px;
+  
   padding-left: 20;
   color: rgb(255, 255, 255);
   list-style-type: square;
@@ -232,8 +233,9 @@ header h1:hover {
   width: 500px;
   margin-top: -50px;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px 100%;
+  padding: 30px ;
   margin-bottom: 180px;
+  
 }
 
 #conocimientos h4 {
