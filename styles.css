@@ -80,10 +80,12 @@ header a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
   }
 
   header {
-    height: 155vh;
+    height: 180vh;
   }
 
   header h1 {
@@ -97,6 +99,7 @@ header a {
     height: 350px;
     width: 350px;
   }
+ 
 }
 
 
@@ -137,6 +140,9 @@ header h1:hover {
   color: rgb(90, 231, 184);
 }
 
+
+
+
 .acercademi {
   background-color: rgb(108, 168, 148);
   display: flex;
@@ -166,8 +172,23 @@ header h1:hover {
   background-color: rgb(0, 0, 0);
   color: white;
   text-shadow: rgb(90 231 184) 0px 0px 3px;
-  padding: 100px 0px;
+  padding: 100px;
   margin: 0;
+}
+@media(max-width: 1100px){
+  .acercademi{
+    height: 125vh;
+  }
+
+  .acercademi h2{
+    padding: 0px 200px;
+    font-size: 70px;
+  }
+  .acercademi p{
+    height: 400px;
+    padding: 100px;
+    
+  }
 }
 
 #objetivos {
@@ -177,7 +198,6 @@ header h1:hover {
   justify-content: center;
   border-top: solid rgb(255, 255, 255);
   background-color: black;
-  flex-wrap: nowrap;
 }
 
 #objetivos h3 {
@@ -201,7 +221,7 @@ header h1:hover {
 
 #objetivos li {
   font-size: 25px;
-  
+  margin: 70px 0px 50px 150px;
   padding-left: 20;
   color: rgb(255, 255, 255);
   list-style-type: square;
@@ -214,6 +234,22 @@ header h1:hover {
   border: 1px solid double black;
   overflow-x: hidden;
   overflow-y: hidden;
+}
+
+@media(max-width: 1100px){
+  #objetivos{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80vh;
+    padding: 30px 0px;
+  }
+  #objetivos h3{
+   font-size: 60px;
+   margin: 0px;
+  }
+  #objetivos li{
+    margin: 30px;
+  }
 }
 
 #conocimientos {
@@ -242,6 +278,13 @@ header h1:hover {
   font-size: 80px;
   margin: 30px 0 30px 0;
   text-shadow: -4px 3px 0px rgb(255, 255, 255);
+}
+
+@media(max-width: 1100px){
+  #conocimientos h4{
+    font-size: 65px;
+    padding: 100px;
+  }
 }
 
 footer {
@@ -295,4 +338,19 @@ footer {
   border-left: solid rgb(90 231 184);
   border-right: solid rgb(90 231 184);
   padding: 0 20px;
+}
+
+@media(max-width: 1100px){
+  #contacto{
+   flex-direction: column;
+   justify-content: space-around;
+  }
+  #contacto p{
+    margin: 60px;
+    font-size: 35px;
+  }
+  .nombref{
+    border: none;
+    font-size: 200px;
+  }
 }
