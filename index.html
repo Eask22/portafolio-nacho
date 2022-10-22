@@ -14,28 +14,32 @@
   <meta http-equiv="expires" content="0">
   <meta http-equiv="Cache-Control" content="no-cache">
   <meta http-equiv="Pragma" content="no-cache">
+ 
 </head>
 
 <body>
   <!-- HEADER -->
   <header>
-    <div class="respmenu">
-      <input type="checkbox">
-      <i class="fas fa-bars"></i>
-      <i class="fas fa-times"></i>
-      <nav id="inicio">
-        <ul>
-          <li><a href="#sobremi">Sobre Mi</a></li>
-          <li><a href="#conocimientos">Conocimientos</a></li>
-          <li><a href="#objetivos">Objetivos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
+    <div class="hamburger">
+      <div class="_layer -top"></div>
+      <div class="_layer -mid"></div>
+      <div class="_layer -bottom"></div>
     </div>
+    <nav class="menuppal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobremi">Sobre Mi</a></li>
+        <li><a href="#conocimientos">Conocimientos</a></li>
+        <li><a href="#objetivos">Objetivos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div id="inicio">
     <div class="nombre">
       <h1>Ignacio Alvarez</h1>
       <p>Web Developer</p>
       <a class="button2" href="#contacto">Mas Info</a>
+    </div>
     </div>
     <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
         style="height: 100%; width: 100%;">
@@ -45,8 +49,8 @@
 
   </header>
 
-  
-    </svg></div>
+
+  </svg></div>
   <!-- SOBRE MI -->
   <div id="sobremi">
     <h2>Sobre Mi</h2>
@@ -57,29 +61,57 @@
       al momento estoy aprendiendo programacion relacionada al desarrollo web,
       para asi poder crear paginas que complazcan las necesidades de mis clientes.</p>
   </div>
-  
-    
-    <!-- CONOCIMIENTOS -->
-    <div id="conocimientos">
-      <h3>Conocimientos</h3>
-      <img class="imghvr-zoom-out" src="./CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="Imagen de logos de CSS y HTML." width="300px">
-    </div>
-    <!-- OBJETIVOS -->
-    <div id="objetivos">
-      <h4>OBJETIVOS</h4>
-      <ul>
-        <li>Saber a fondo HTML y CSS para conocer todos sus conceptos</li>
-        <li>Relacionarme con Javascript y React</li>
-        <li> Crear paginas webs funcionales y que tengan un uso practico</li>
-        <li> Buscar trabajo como Frontend Developer</li>
-        <li>Inicializarme en Backend</li>
-      </ul>
-    </div>
-  <footer id="contacto">
-    <p>Podes contactarme por Whatsapp O por Mail</p>
-    <p>Ignacio Alvarez</p>
-  </footer>
 
+
+  <!-- CONOCIMIENTOS -->
+  <div id="conocimientos">
+    <h3>Conocimientos</h3>
+    <img class="imghvr-zoom-out" src="./CSS3_and_HTML5_logos_and_wordmarks.svg.png" alt="Imagen de logos de CSS y HTML."
+      width="300px">
+  </div>
+  <!-- OBJETIVOS -->
+  <div id="objetivos">
+    <h4>OBJETIVOS</h4>
+    <ul>
+      <li>Saber a fondo HTML y CSS para conocer todos sus conceptos</li>
+      <li>Relacionarme con Javascript y React</li>
+      <li> Crear paginas webs funcionales y que tengan un uso practico</li>
+      <li> Buscar trabajo como Frontend Developer</li>
+      <li>Inicializarme en Backend</li>
+    </ul>
+  </div>
+  <footer>
+    <div id="contacto">
+      <p>
+        Podes contactarme por
+        <a class="wats" target="_blank"
+          href="https://api.whatsapp.com/send?phone=+54 11 6897 9533&text=Hola, estaba interesado en saber si me podrias hacer una pagina web, gracias!">Whatsapp</a>
+        O por
+        <a class="mail" target="_blank" href="mailto:ignaciogabrielalvarez2018@gmail.com?">Mail</a>
+      </p>
+      <p class="nombref">Ignacio<span> Alvarez</span></p>
+    </div>
+ <script src="scripts.js">// selector
+  var menu = document.querySelector('.hamburger');
+  
+  // method
+  function toggleMenu (event) {
+    this.classList.toggle('is-active');
+    document.querySelector( ".menuppal" ).classList.toggle("is_active");
+    event.preventDefault();
+  }
+  
+  // event
+  menu.addEventListener('click', toggleMenu, false);
+  
+  //Solución con jQUery
+  /*$(document).ready(function(){
+    $('.hamburger').click(function() {
+      $('.hamburger').toggleClass('is-active');
+      $('.menuresponsive').toggleClass('is-active');
+      return false;
+    });
+  });*/</script>
 </body>
 
 </html>
