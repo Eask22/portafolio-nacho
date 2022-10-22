@@ -44,10 +44,12 @@ body {
 
 .respmenu {
     color: rgb(0, 0, 0);
-    position: sticky;
-    top: 0;
     background: rgb(255, 255, 255, 0.3);
     min-height: 48px;
+    z-index: 1;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px 30px black;
+    
 
 }
 
@@ -72,16 +74,15 @@ header {
     background: -webkit-linear-gradient(to right, #A43931, #1D4350);
     background: linear-gradient(to right, #a4393181, #1d4350), url(./coding-g5a5002104_1920.jpg);
     background-size: cover;
-    height: 55vh;
+    height: 70vh;
     position: relative;
+    background-attachment: fixed;
 }
-.wave{
+
+.wave {
     position: absolute;
     width: 100%;
     bottom: 0;
-    
-    
-    
 }
 
 .nombre {
@@ -89,7 +90,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
 
 .nombre h1 {
@@ -102,11 +102,24 @@ header {
 .nombre p {
     font-size: 30px;
     margin: 5px 0px 30px 0px;
-    font-weight: bold; 
+    font-weight: bold;
     color: white;
     text-shadow: 0px 0px 0px #1d4350;
+    white-space: nowrap;
+    border-right: 3px solid;
+    width: 13ch;
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+    overflow: hidden;
+    padding: 0;
     
+}
 
+@keyframes typing{
+    from {width: 0;}
+}
+
+@keyframes blink{
+    50% { border-color: transparent;}
 }
 
 .button2 {
@@ -175,4 +188,61 @@ header {
     top: -45%;
     background-color: #a4393181;
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+
+#sobremi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+}
+
+#sobremi h2 {
+    font-size: 37px;
+    border: 2px solid;
+    background: linear-gradient(to right, #a4393181, #1d4350);
+    padding: 10px 30px;
+    color: white;
+    border-radius: 0.5em;
+    margin-bottom: 40px;
+}
+
+#sobremi p {
+    background: -webkit-linear-gradient(to right, #1D4350, #A43931);
+    background: linear-gradient(to right, #1d4350af, #a43931af);
+    color: black;
+    background-attachment: fixed;
+    margin: 0px 20px;
+    padding: 40px 20px;
+    font-weight: bold;
+    box-shadow: 0px 0px 100px rgb(107, 106, 106);
+}
+
+
+
+#conocimientos {
+    background: -webkit-linear-gradient(to right, #A43931, #1D4350);
+    background: linear-gradient(to right, #a4393181, #1d4350), url(./coding-g5a5002104_1920.jpg);
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 65vh;
+}
+
+#conocimientos h3 {
+    font-size: 50px;
+    margin: 60px 0px 0px 0px;
+    color: white;
+    text-shadow: 0px 0px 0px #1d4350;
+    margin-bottom: 100px;
+}
+#conocimientos img{
+    background-color: rgba(128, 128, 128, 0.26);
+    padding: 30px 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+    
 }
