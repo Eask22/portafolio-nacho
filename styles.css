@@ -229,6 +229,7 @@ header {
     flex-direction: column;
     align-items:center;
     height: 65vh;
+    overflow-x: hidden;
 }
 
 #conocimientos h3 {
